@@ -23,12 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
         // Create a list of participants
         const participantsList = details.participants.length
           ? `
-            <h5>Participantes Inscritos:</h5>
-            <ul class="participants-list">
-              ${details.participants.map(participant => `<li>${participant}</li>`).join("")}
-            </ul>
+            <div class="participants-section">
+              <h5>Participantes Inscritos:</h5>
+              <ul class="participants-list">
+                ${details.participants.map(participant => `<li>${participant}</li>`).join("")}
+              </ul>
+            </div>
           `
-          : "<p><strong>Participantes Inscritos:</strong> Nenhum participante ainda.</p>";
+          : "<p class='no-participants'><strong>Participantes Inscritos:</strong> Nenhum participante ainda.</p>";
 
         activityCard.innerHTML = `
           <h4>${name}</h4>
