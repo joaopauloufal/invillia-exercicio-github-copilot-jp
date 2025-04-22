@@ -155,3 +155,10 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-list li {
+  margin-bottom: 10px; /* Espaçamento entre os participantes */
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5; /* Melhor legibilidade */
+}
